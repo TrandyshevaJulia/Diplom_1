@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="praktikum.IngredientTest" time="0.081" tests="24" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="praktikum.ParameterizedBurgerTest" time="0.172" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -57,28 +57,256 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="testGetPrice[0]" classname="praktikum.IngredientTest" time="0.0"/>
-  <testcase name="testGetName[0]" classname="praktikum.IngredientTest" time="0.002"/>
-  <testcase name="testGetType[0]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testIngredientCreation[0]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testGetPrice[1]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testGetName[1]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testGetType[1]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testIngredientCreation[1]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testGetPrice[2]" classname="praktikum.IngredientTest" time="0.003"/>
-  <testcase name="testGetName[2]" classname="praktikum.IngredientTest" time="0.002"/>
-  <testcase name="testGetType[2]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testIngredientCreation[2]" classname="praktikum.IngredientTest" time="0.004"/>
-  <testcase name="testGetPrice[3]" classname="praktikum.IngredientTest" time="0.003"/>
-  <testcase name="testGetName[3]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testGetType[3]" classname="praktikum.IngredientTest" time="0.003"/>
-  <testcase name="testIngredientCreation[3]" classname="praktikum.IngredientTest" time="0.002"/>
-  <testcase name="testGetPrice[4]" classname="praktikum.IngredientTest" time="0.002"/>
-  <testcase name="testGetName[4]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testGetType[4]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testIngredientCreation[4]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testGetPrice[5]" classname="praktikum.IngredientTest" time="0.0"/>
-  <testcase name="testGetName[5]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testGetType[5]" classname="praktikum.IngredientTest" time="0.001"/>
-  <testcase name="testIngredientCreation[5]" classname="praktikum.IngredientTest" time="0.001"/>
+  <testcase name="testBurgerWithIngredients[0]" classname="praktikum.ParameterizedBurgerTest" time="0.009">
+    <system-out><![CDATA[Expected Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+(==== black bun ====)
+
+Price: 300.000000
+
+Actual Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+(==== black bun ====)
+
+Price: 300,000000
+
+Formatted Actual Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+(==== black bun ====)
+
+Price: 300.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[1]" classname="praktikum.ParameterizedBurgerTest" time="0.005">
+    <system-out><![CDATA[Expected Receipt:
+(==== black bun ====)
+= filling cutlet =
+(==== black bun ====)
+
+Price: 300.000000
+
+Actual Receipt:
+(==== black bun ====)
+= filling cutlet =
+(==== black bun ====)
+
+Price: 300,000000
+
+Formatted Actual Receipt:
+(==== black bun ====)
+= filling cutlet =
+(==== black bun ====)
+
+Price: 300.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[2]" classname="praktikum.ParameterizedBurgerTest" time="0.033">
+    <system-out><![CDATA[Expected Receipt:
+(==== white bun ====)
+= sauce sour cream =
+(==== white bun ====)
+
+Price: 600.000000
+
+Actual Receipt:
+(==== white bun ====)
+= sauce sour cream =
+(==== white bun ====)
+
+Price: 600,000000
+
+Formatted Actual Receipt:
+(==== white bun ====)
+= sauce sour cream =
+(==== white bun ====)
+
+Price: 600.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[3]" classname="praktikum.ParameterizedBurgerTest" time="0.027">
+    <system-out><![CDATA[Expected Receipt:
+(==== white bun ====)
+= filling dinosaur =
+(==== white bun ====)
+
+Price: 600.000000
+
+Actual Receipt:
+(==== white bun ====)
+= filling dinosaur =
+(==== white bun ====)
+
+Price: 600,000000
+
+Formatted Actual Receipt:
+(==== white bun ====)
+= filling dinosaur =
+(==== white bun ====)
+
+Price: 600.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[4]" classname="praktikum.ParameterizedBurgerTest" time="0.003">
+    <system-out><![CDATA[Expected Receipt:
+(==== red bun ====)
+= sauce chili sauce =
+(==== red bun ====)
+
+Price: 900.000000
+
+Actual Receipt:
+(==== red bun ====)
+= sauce chili sauce =
+(==== red bun ====)
+
+Price: 900,000000
+
+Formatted Actual Receipt:
+(==== red bun ====)
+= sauce chili sauce =
+(==== red bun ====)
+
+Price: 900.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[5]" classname="praktikum.ParameterizedBurgerTest" time="0.002">
+    <system-out><![CDATA[Expected Receipt:
+(==== red bun ====)
+= filling sausage =
+(==== red bun ====)
+
+Price: 900.000000
+
+Actual Receipt:
+(==== red bun ====)
+= filling sausage =
+(==== red bun ====)
+
+Price: 900,000000
+
+Formatted Actual Receipt:
+(==== red bun ====)
+= filling sausage =
+(==== red bun ====)
+
+Price: 900.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[6]" classname="praktikum.ParameterizedBurgerTest" time="0.004">
+    <system-out><![CDATA[Expected Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+= filling cutlet =
+(==== black bun ====)
+
+Price: 400.000000
+
+Actual Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+= filling cutlet =
+(==== black bun ====)
+
+Price: 400,000000
+
+Formatted Actual Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+= filling cutlet =
+(==== black bun ====)
+
+Price: 400.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[7]" classname="praktikum.ParameterizedBurgerTest" time="0.005">
+    <system-out><![CDATA[Expected Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+= sauce sour cream =
+(==== black bun ====)
+
+Price: 500.000000
+
+Actual Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+= sauce sour cream =
+(==== black bun ====)
+
+Price: 500,000000
+
+Formatted Actual Receipt:
+(==== black bun ====)
+= sauce hot sauce =
+= sauce sour cream =
+(==== black bun ====)
+
+Price: 500.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[8]" classname="praktikum.ParameterizedBurgerTest" time="0.006">
+    <system-out><![CDATA[Expected Receipt:
+(==== white bun ====)
+= sauce sour cream =
+= filling dinosaur =
+(==== white bun ====)
+
+Price: 800.000000
+
+Actual Receipt:
+(==== white bun ====)
+= sauce sour cream =
+= filling dinosaur =
+(==== white bun ====)
+
+Price: 800,000000
+
+Formatted Actual Receipt:
+(==== white bun ====)
+= sauce sour cream =
+= filling dinosaur =
+(==== white bun ====)
+
+Price: 800.000000
+
+]]></system-out>
+  </testcase>
+  <testcase name="testBurgerWithIngredients[9]" classname="praktikum.ParameterizedBurgerTest" time="0.008">
+    <system-out><![CDATA[Expected Receipt:
+(==== red bun ====)
+= sauce chili sauce =
+= filling sausage =
+(==== red bun ====)
+
+Price: 1200.000000
+
+Actual Receipt:
+(==== red bun ====)
+= sauce chili sauce =
+= filling sausage =
+(==== red bun ====)
+
+Price: 1200,000000
+
+Formatted Actual Receipt:
+(==== red bun ====)
+= sauce chili sauce =
+= filling sausage =
+(==== red bun ====)
+
+Price: 1200.000000
+
+]]></system-out>
+  </testcase>
 </testsuite>
